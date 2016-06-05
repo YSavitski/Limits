@@ -18,3 +18,6 @@ F:\C#\AlfaBank\Limits\Limits\obj\Debug\Limits.Properties.Resources.resources
 F:\C#\AlfaBank\Limits\Limits\obj\Debug\Limits.csproj.GenerateResource.Cache
 F:\C#\AlfaBank\Limits\Limits\obj\Debug\Limits.exe
 F:\C#\AlfaBank\Limits\Limits\obj\Debug\Limits.pdb
+F:\C#\AlfaBank\LimitsProject\Limits\bin\Debug\Limits.exe.config
+F:\C#\AlfaBank\LimitsProject\Limits\obj\Debug\Limits.exe
+F:\C#\AlfaBank\LimitsProject\Limits\obj\Debug\Limits.pdb
