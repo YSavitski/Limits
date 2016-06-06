@@ -50,6 +50,7 @@
     <Compile Include="AddBank.Designer.cs">
       <DependentUpon>AddBank.cs</DependentUpon>
     </Compile>
+    <Compile Include="BankUpdates.cs" />
     <Compile Include="ExtensionClass.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

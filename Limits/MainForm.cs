@@ -26,7 +26,7 @@ namespace Limits
 
         private void btnAddBank_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.DialogResult result = new AddBank().ShowDialog();
+            System.Windows.Forms.DialogResult result = new AddBank(tbBankInfoLimit).ShowDialog();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -41,13 +41,13 @@ namespace Limits
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(string.Format("{0}: {1}", DateTime.Now, ex.Message), "Connection eorror", MessageBoxButtons.RetryCancel);
+                    MessageBox.Show(string.Format("{0}: {1}", DateTime.Now, ex.Message), "Connection error", MessageBoxButtons.RetryCancel);
                 }
 
-                SqlCommand cmd_GetDataBankInfoLimit = new SqlCommand(string.Format("SELECT BankName, BaseAc, OverallLimit, NCRate, NCLimit, NostroLimit, " +
-                                                                                   "CredOper1DayLimit, ForexLimit, CashLimit, SecutitiesLimit, " +
-                                                                                   "OthersLimit, LastModifyRow " +
-                                                                                   "FROM BankInfoLimit"), connection);
+                SqlCommand cmd_GetDataBankInfoLimit = new SqlCommand(string.Format("SELECT BankName, BaseAc, OverallLimit, NCRate, NCLimit, ActualCredPos, " +
+                                                                                   "NostroLimit, CredOper1DayLimit, ForexLimit, CashLimit, SecuritiesLimit, " +
+                                                                                   "OthersLimit, LastModifyRow FROM BankInfoLimit"),
+                                                                                   connection);
                 //SqlDataReader readerBIL = cmd_GetDataBankInfoLimit.ExecuteReader();
                 //tbBankInfoLimit.LoadData(readerBIL);
                 //readerBIL.Close();
